@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Open+Sans:ital,wght@0,400;0,500;1,400&family=Raleway:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&family=Sintony:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>D2-JS parte 3</title>
+</head>
+
+<body>
+    <h1>Ingresa tu clave</h1>
+
+    <div class="container">
+
+        <div class="selection">
+
+            <select name="uno" id="var1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <select name="dos" id="var2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <select name="tres" id="var3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+        </div>
+
+        <div>
+            <button id="boton" onclick="
+
+                boton=document.querySelector('#clave').value;
+                uno=document.querySelector('#var1').value;
+                dos=document.querySelector('#var2').value;
+                tres=document.querySelector('#var3').value;
+                clave=document.querySelector('#clave');
+
+                if (uno== 9 && dos == 1 && tres == 1) {
+                   clave.innerHTML= 'Password 1 correcto ';
+                }
+                else if (uno== 7 && dos == 1 && tres == 4) {
+                    clave.innerHTML= 'Password 2 correcto ';
+                }
+
+                else {
+                    clave.innerHTML= 'Password incorrecto ';
+                    alert('Password incorrecto, le quedan 2 intentos');
+                }
+                ">
+                Ingresar
+            </button>
+        </div>
+
+        <div>
+            <p id="clave"><span></span></p>
+        </div>
+
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

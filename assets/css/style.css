@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagen {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 3rem;
+    cursor: pointer;
+    
+}
+
+img {
+    border-radius: 10%;
+   
+}
+
+body {
+    background-color: rgb(195, 223, 231);
+}
+
+h2 {
+    font-size: 2em;
+    margin: 10px;
+}
+
+a {
+    margin: 20px;
+    font-size: 20px;
+}
